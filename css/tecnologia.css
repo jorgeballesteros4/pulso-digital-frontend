@@ -1,0 +1,237 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: #121212; /* Fondo oscuro de la página */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header fijo con fondo oscuro */
+#hedePulsoDigital.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #1a1a1a; /* Fondo oscuro del header */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Contenedor central (ahora coincide con class="wrapper") */
+.wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+#site-logo {
+    display: flex;
+    align-items: center;
+}
+
+#site-logo img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+/* Centra el menú horizontalmente */
+.nav-links {
+    margin: 0 auto;
+}
+
+ul.d-flex {
+    list-style: none;
+    display: flex;
+    gap: 45px; /* Separación entre Tecnologia, Politica y Deportes */
+    margin: 0;
+    padding: 0;
+}
+
+/* Enlaces más grandes */
+.link-header a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2.6rem; /* Ajusta aquí el tamaño: 2.4rem, 2.6rem, 2.8rem, etc. */
+    font-weight: bold;
+    text-transform: uppercase; /* Opcional: si las quieres en mayúsculas */
+    transition: color 0.3s ease;
+}
+
+.link-header a:hover {
+    color: #e5a93b;
+}
+
+.link-header a:visited {
+    color: rgb(198,140,93);
+}
+
+/* footer*/
+
+.footer-basic{
+    padding: 40px 0px;
+    background-color: white;
+    color: black;
+}
+
+.footer-basic .social {
+    text-align: center;
+
+}
+
+
+.footer-basic .social >a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 0px;
+
+}
+
+/* Portada*/
+
+.Portada {
+    background-image: url(../imagenes/logo_tecnologia_oscuro.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    padding: 0px 60px;
+    display: table;
+    width: 100%;
+    background-position: left;
+    
+
+}
+
+.header__texto{
+    text-align: center;
+    color: white;
+    height: 50%;
+    align-items: leif;
+    display: table-cell;
+    vertical-align: middle;
+    
+
+}
+
+h2.no-margin {
+    font-size: 80px;
+}
+
+.border-title{
+    border-bottom: 6px solid #e5a93b;
+    width: 30%;
+}
+
+.description-title{
+    font-size: 18px;
+}
+
+/* noticias pagina principal*/
+
+.centrar-texto{
+    text-align: center ;
+    color: #e5a93b;
+
+}
+
+.bg-gray{
+    background-color: white;
+}
+
+
+
+
+.img-noticias{
+ width: 500px;            /* Ancho fijo para que todas sean del tamaño de la pequeña */
+    height: auto;           /* Altura fija idéntica para todas */
+    object-fit: cover;       /* Clave: encuadra y recorta la foto para que no se deforme */
+    display: block;          /* Necesario para centrar */
+    margin: 20px auto;       /* Centra la imagen en medio de la tarjeta negra */
+    border-radius: 8px;      /* Opcional: esquinas ligeramente redondeadas */
+}
+
+.noticias-recientes{
+   height: auto;
+    background-color: black;
+    width: 85%;             /* Ocupa el 90% a lo largo de la pantalla */
+    max-width: 2200px;      /* Límite para que no se deforme en pantallas gigantes */
+    margin: 30px auto;      /* "auto" a los lados es la CLAVE que lo centra en la pantalla */
+    border-radius: 16px;
+    padding-bottom: 20px;
+
+}
+
+.txt-base-carrusel{
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    border-radius: 6px;
+    padding: 0 10px;
+}
+
+
+.txt-base-carruse{
+    font-size: 40px;
+    color: white;
+    background-color: #e5a93b;
+    height: auto;
+    text-align: center;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* utilidades*/
+
+.no-margin{
+    margin: 0px;
+}
+h2{
+    font-size: 4rem;
+    } 
+
+.text-start{
+    text-align: start;
+}    
+
