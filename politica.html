@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PULSO DIGITAL</title>
-    <link rel="stylesheet" href="css/politica.css">+
+    <title>Política - PULSO DIGITAL</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="js/main.js" defer></script>
+</head>
 <body>
     <div id="pagePulsoDigital">
 
@@ -14,16 +16,18 @@
             <header id="heder">
                 <div class="wrapper">
                     <div id="site-logo">
-                        <a href="#" title="pulso">
+                        <a href="index.html" title="pulso">
                             <img src="imagenes/encabezado.jpg" alt="logo pulso">
                         </a>
                     </div>
-
+                    <span id="fecha-actual" class="fecha-header"></span>
                     <nav class="nav-links">
                         <ul class="d-flex">
+                            <li class="link-header"><a href="index.html">Inicio</a></li>
                             <li class="link-header"><a href="tecnologia.html">Tecnología</a></li>
                             <li class="link-header"><a href="politica.html">Política</a></li>
                             <li class="link-header"><a href="deportes.html">Deportes</a></li>
+                            <li class="link-header"><a href="contacto.html">Contacto</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -32,10 +36,10 @@
 
     </div>
 
-    <!--  ====== Portada ===== -->
-      <div class="Portada">
+    <!-- ====== Portada ===== -->
+    <div class="Portada">
         <div class="header__texto">
-            <h2 class="no-margin text-start ">POLITICA</h2>
+            <h2 class="no-margin text-start">POLÍTICA</h2>
             <div class="no-margin border-title"></div>
             <p class="no-margin text-start description-title">
                 Siente el ritmo de los acontecimientos que definen el presente.
@@ -43,84 +47,76 @@
             <p class="no-margin text-start description-title">
                 Cobertura crítica del debate político, el avance digital y la emoción deportiva.
             </p>
-
         </div>
+    </div>
 
-      </div>
-<!-- ===== noticias pagina principal ===== -->
-<main>
-    <h2 class="centrar-texto">Noticias del dia</h2>
-     <div class="bg-gray secccion-noticias"></div>
-     <div class="noticias-recientes">
-        <div>
-            <img class="img-noticias" src="imagenes/cripto.png" alt="cripto estafas">as">
+    <!-- ===== Noticias Política ===== -->
+    <main>
+        <h2 class="centrar-texto">Noticias de Política</h2>
+
+        <div class="bg-gray seccion-noticias"></div>
+        <div class="noticias-recientes">
             <div>
+                <img class="img-noticias" src="imagenes/p_alcocer.png" alt="Reacciones caso Alcocer">
                 <div>
-                    <h3 class="txt-base-carruse">cripto estafas</h3>
-                    <p class="txt-base-carrusel">“La estimación de esta cifra tomó como punto de partida los USD 44.200 millones en cripto activos que recibió el país entre julio de 2024 y junio de 2025, según Chainalysis. A partir de ese volumen, el gremio contrastó la incidencia global de las estafas cripto reportada por TRM Labs y aplicó la proporción de fraudes vinculados con herramientas de inteligencia artificial. El resultado pone el fenómeno en una dimensión mucho más preocupante”, explica Asoblockchain.</p>
+                    <div>
+                        <h3 class="txt-base-carruse">"Se debe esclarecer": mundo político reaccionó a señalamientos contra Verónica Alcocer</h3>
+                        <p class="txt-base-carrusel">Los señalamientos contra la exprimera dama Verónica Alcocer por parte de quien fue su mejor amiga y consejera presidencial, Eva Ferrer, ya generaron reacciones de todas las orillas políticas. El presidente Abelardo de la Espriella ordenó "esclarecer lo ocurrido" y el exmandatario Gustavo Petro anunció demandas por parte de su familia.</p>
+                        <p class="txt-base-carrusel">Ferrer, exconsejera presidencial para la Niñez, acusó a Alcocer de, presuntamente, haber aprovechado su rol para traficar drogas, armas y dinero entre Colombia y Venezuela. Además, la señaló de un supuesto direccionamiento de cargos y contratos en distintas entidades del Gobierno nacional.</p>
+                        <p class="txt-base-carrusel">"A mí me dicen, y lo que viví, es que todos los temas de los vuelos de Verónica hacia Venezuela los llevaba Carolina Plata y eran superconfidenciales. Y desde que yo salí (de la Presidencia), más. Sé que a uno de los edecanes no lo tienen en cuenta para nada de esos viajes porque decían que no les daba confianza y que todo eso se llevaba muy en secreto", dijo Eva Ferrer en entrevista con SEMANA.</p>
+                        <div class="acciones-noticia">
+                            <a href="#" class="btn-ver-mas">Ver más</a>
+                            <button type="button" class="btn-favorito" onclick="toggleFavorito('politica-noticia-1')">★ Favoritos</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-     </div>
 
-     <div class="bg-gray secccion-noticias"></div>
-     <div class="noticias-recientes">
-        <div>
-            <img class="img-noticias" src="imagenes/Medellín lloviendo.jpg" alt="cripto estafas">as">
+        <div class="bg-gray seccion-noticias"></div>
+        <div class="noticias-recientes">
             <div>
+                <img class="img-noticias" src="imagenes/p_golpepetro.png" alt="Declaraciones Angie Rodríguez">
                 <div>
-                    <h3 class="txt-base-carruse">¡Alivio para embalses y trancones en las vías!</h3>
-                    <p class="txt-base-carrusel">“Fuertes lluvias en Medellín y el Valle de Aburrá aliviaron la sequía de los embalses, pero provocaron caos en la movilidad por caídas de árboles y accidentes viales. El Siata advirtió que los aguaceros coexistirán con el fenómeno de El Niño en la región.</p>
-                    <p class="txt-base-carrusel">Si bien esta agua era necesaria para sopesar la baja de niveles de los embalses como consecuencia del fenómeno de El Niño, las autoridades y ciudadanos reportan algunos accidentes viales y caos en la movilidad</p>
-
+                    <div>
+                        <h3 class="txt-base-carruse">Verónica Alcocer agredía físicamente a Gustavo Petro, según Angie Rodríguez: “Le estaba pegando, lo insultaba”</h3>
+                        <p class="txt-base-carrusel">Angie Rodríguez, en entrevista con SEMANA, respaldó varias de las revelaciones de Eva Ferrer, examiga de Verónica Alcocer, y confirmó que fue víctima de agresión física y verbal por parte de la ex primera dama. Igualmente, contó que el expresidente Gustavo Petro también habría sido violentado por su exesposa.</p>
+                        <p class="txt-base-carrusel">La exdirectora del Dapre contó sobre un episodio que ocurrió en febrero de 2025, cuando recién llegaba al cargo, en el que Alcocer entró a la oficina de Petro.</p>
+                        <p class="txt-base-carrusel">“Se empezó a escuchar gritos, insultos. O sea, ella le estaba pegando al presidente”, manifestó Rodríguez para este medio.</p>
+                        <p class="txt-base-carrusel">La exfuncionaria y antigua mano derecha de Petro aseguró que podía escuchar lo que pasaba en la oficina del exmandatario, dada la cercanía a su puesto de trabajo como directora del Dapre.</p>
+                        <div class="acciones-noticia">
+                            <a href="#" class="btn-ver-mas">Ver más</a>
+                            <button type="button" class="btn-favorito" onclick="toggleFavorito('politica-noticia-2')">★ Favoritos</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-     </div>
-     div class="bg-gray secccion-noticias"></div>
-     <div class="noticias-recientes">
-        <div>
-            <img class="img-noticias" src="imagenes/carro_electrico.jpg" alt="cripto estafas">as">
+
+        <div class="bg-gray seccion-noticias"></div>
+        <div class="noticias-recientes">
             <div>
+                <img class="img-noticias" src="imagenes/p_eln.png" alt="Medidas contra grupos armados">
                 <div>
-                    <h3 class="txt-base-carruse">¿Uno de cada dos carros nuevos ya es eléctrico o híbrido: Tesla y BYD concentran más del 60% en 2026</h3>
-                    <p class="txt-base-carrusel">Tesla se quedó con 41,6% del mercado colombiano de vehículos eléctricos entre enero y agosto, mientras BYD alcanzó 21,6%. El avance de estas marcas ocurre en un mercado en el que las tecnologías electrificadas representaron en agosto el 50,6 % de las matrículas de carros nuevos.</p>
-                    <p class="txt-base-carrusel">El carro eléctrico dejó de ser una rareza en las calles colombianas y comenzó a disputarles espacio a los motores de combustión. En agosto, por primera vez, los vehículos híbridos y eléctricos representaron 50,6% de todos los vehículos nuevos matriculados en Colombia. Es decir, uno de cada dos carros que llegaron al registro en el mes utilizaba alguna de estas tecnologías.</p>
-                </div>
+                    <div>
+                        <h3 class="txt-base-carruse">EE. UU. y países aliados piden nuevas medidas contra 24 grupos criminales, incluyendo el ELN y las disidencias de las Farc</h3>
+                        <p class="txt-base-carrusel">El Escudo de las Américas envió un duro comunicado alertando a las organizaciones criminales en la región.</p>
+                        <p class="txt-base-carrusel">La alianza Escudo de las Américas, liderada por Estados Unidos, propuso este martes, 22 de septiembre, sancionar colectivamente a 24 grupos del crimen organizado en la región a los que consideran “una amenaza inmediata y compartida”.</p>
+                        <p class="txt-base-carrusel">“Anunciamos hoy la primera acción conjunta (...) para enfrentar el flagelo del narcoterrorismo”, explicó el comunicado emitido tras una reunión de líderes de la coalición en la sede de la ONU.</p>
+                        <p class="txt-base-carrusel">“Los Estados participantes se proponen fortalecer la cooperación mediante un mayor intercambio de inteligencia; facilitar el acceso, cuando proceda, a tecnologías y capacidades de seguridad; promover la formación y el desarrollo profesional de los recursos humanos; y ampliar el intercambio de mejores prácticas”,
+
+                                <!-- ==== Footer ======== --> 
+    <div id="FooterPuntoDigital" class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="icon icon-color ion-social-github"></i></a>
+                <a href="#"><i class="icon icon-color ion-social-whatsapp"></i></a>
+                <a href="#"><i class="icon icon-color ion-social-facebook"></i></a>
+                <a href="#"><i class="icon icon-color ion-social-instagram"></i></a>
             </div>
-        </div>
-     </div>
-     div class="bg-gray secccion-noticias"></div>
-     <div class="noticias-recientes">
-        <div>
-            <img class="img-noticias" src="imagenes/poli.png" alt="cripto estafas">as">
-            <div>
-                <div>
-                    <h3 class="txt-base-carruse">Así se vivió la participación del Poli en la Fiesta del Libro y la Cultura de Medellín</h3>
-                    <p class="txt-base-carrusel">Del 11 al 20 de septiembre, el Poli hizo parte de la Fiesta del Libro y la Cultura de Medellín, un encuentro que reunió a la ciudadanía alrededor de la literatura, el conocimiento, el arte y la cultura, y que permitió compartir diferentes iniciativas desarrolladas desde la Institución junto a aliados del territorio.</p>
-                    <p class="txt-base-carrusel">Durante esta edición, el Poli contó con un espacio en el que los visitantes pudieron conocer su catálogo editorial, la oferta académica y diferentes proyectos que conectaron la educación con la cultura, la creación y las historias de las comunidades.</p>
-                    <p class="txt-base-carrusel">Uno de los momentos destacados fue la presentación de “De grande quiero ser bombero”, una publicación infantil desarrollada junto al Cuerpo de Bomberos Voluntarios de Envigado. El libro, creado por Graduadas Poli con el acompañamiento docente y la asesoría técnica del organismo de socorro, acercó a niñas y niños a la labor bomberil mediante ilustraciones, actividades, retos y contenidos interactivos. La propuesta permitió conocer el trabajo, la preparación y el compromiso de quienes atienden emergencias y trabajan por la protección de las comunidades.</p>
-                </div>
-            </div>
-        </div>
-     </div>
-
-</main>
-
-<!-- ==== Footer ======== --> 
-<div id="FooterPuntoDigital"  class="footer-basic">
-    <footer>
-        <div class="social">
-            <a href=""><i class="icon icon-color ion-social-github"></i></a>
-            <a href=""><i class="icon icon-color ion-social-whatsapp"></i></a>
-            <a href=""><i class="icon icon-color ion-social-facebook"></i></a>
-            <a href=""><i class="icon icon-color ion-social-instagram"></i></a>
-
-        </div>
-        <p class="copyright">Pulso Digital ©2026</p>
-    </footer>
-
-</div>
+            <p class="copyright">Pulso Digital ©2026</p>
+        </footer>
+    </div>
 
 </body>
 </html>

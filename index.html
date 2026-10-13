@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PULSO DIGITAL</title>
-    <link rel="stylesheet" href="css/style.css">+
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
 <body>
     <div id="pagePulsoDigital">
 
         <!-- ====== Header ====== -->
-         
         <div id="hedePulsoDigital" class="fixed-header">
             <header id="heder">
                 <div class="wrapper">
                     <div id="site-logo">
-                        <a href="#" title="pulso">
+                        <a href="index.html" title="pulso">
                             <img src="imagenes/encabezado.jpg" alt="logo pulso">
                         </a>
                     </div>
                     <span id="fecha-actual" class="fecha-header"></span>
                     <nav class="nav-links">
                         <ul class="d-flex">
+                            <li class="link-header"><a href="index.html">Inicio</a></li>
                             <li class="link-header"><a href="tecnologia.html">Tecnología</a></li>
                             <li class="link-header"><a href="politica.html">Política</a></li>
                             <li class="link-header"><a href="deportes.html">Deportes</a></li>
-                            <span id="fecha-actual" class="fecha-header"></span>
+                            <li class="link-header"><a href="contacto.html">Contacto</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -35,10 +36,10 @@
 
     </div>
 
-    <!--  ====== Portada ===== -->
-      <div class="Portada">
+    <!-- ====== Portada ===== -->
+    <div class="Portada">
         <div class="header__texto">
-            <h2 class="no-margin text-start ">PULSO DIGITAL</h2>
+            <h2 class="no-margin text-start">PULSO DIGITAL</h2>
             <div class="no-margin border-title"></div>
             <p class="no-margin text-start description-title">
                 Siente el ritmo de los acontecimientos que definen el presente.
@@ -46,84 +47,99 @@
             <p class="no-margin text-start description-title">
                 Cobertura crítica del debate político, el avance digital y la emoción deportiva.
             </p>
-
         </div>
+    </div>
 
-      </div>
-<!-- ===== noticias pagina principal ===== -->
-<main>
-    <h2 class="centrar-texto">Noticias del dia</h2>
-     <div class="bg-gray secccion-noticias"></div>
-     <div class="noticias-recientes">
-        <div>
-            <img class="img-noticias" src="imagenes/cripto.png" alt="cripto estafas">as">
+    <!-- ===== Noticias Página Principal ===== -->
+    <main>
+        <h2 class="centrar-texto">Noticias del día</h2>
+
+        <div class="bg-gray seccion-noticias"></div>
+        <div class="noticias-recientes">
             <div>
+                <img class="img-noticias" src="imagenes/cripto.png" alt="Cripto estafas">
                 <div>
-                    <h3 class="txt-base-carruse">cripto estafas</h3>
-                    <p class="txt-base-carrusel">“La estimación de esta cifra tomó como punto de partida los USD 44.200 millones en cripto activos que recibió el país entre julio de 2024 y junio de 2025, según Chainalysis. A partir de ese volumen, el gremio contrastó la incidencia global de las estafas cripto reportada por TRM Labs y aplicó la proporción de fraudes vinculados con herramientas de inteligencia artificial. El resultado pone el fenómeno en una dimensión mucho más preocupante”, explica Asoblockchain.</p>
+                    <div>
+                        <h3 class="txt-base-carrusel">Cripto estafas</h3>
+                        <p class="txt-base-carrusel">“La estimación de esta cifra tomó como punto de partida los USD 44.200 millones en cripto activos que recibió el país entre julio de 2024 y junio de 2025, según Chainalysis. A partir de ese volumen, el gremio contrastó la incidencia global de las estafas cripto reportada por TRM Labs y aplicó la proporción de fraudes vinculados con herramientas de inteligencia artificial. El resultado pone el fenómeno en una dimensión mucho más preocupante”, explica Asoblockchain.</p>
+                        <div class="acciones-noticia">
+                            <a href="tecnologia.html" class="btn-ver-mas">Ver más</a>
+                            <button type="button" class="btn-favorito" onclick="toggleFavorito('cripto-estafas')">★ Favoritos</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-     </div>
 
-     <div class="bg-gray secccion-noticias"></div>
-     <div class="noticias-recientes">
-        <div>
-            <img class="img-noticias" src="imagenes/Medellín lloviendo.jpg" alt="cripto estafas">as">
+        <div class="bg-gray seccion-noticias"></div>
+        <div class="noticias-recientes">
             <div>
+                <img class="img-noticias" src="imagenes/Medellín lloviendo.jpg" alt="Lluvias en Medellín">
                 <div>
-                    <h3 class="txt-base-carruse">¡Alivio para embalses y trancones en las vías!</h3>
-                    <p class="txt-base-carrusel">“Fuertes lluvias en Medellín y el Valle de Aburrá aliviaron la sequía de los embalses, pero provocaron caos en la movilidad por caídas de árboles y accidentes viales. El Siata advirtió que los aguaceros coexistirán con el fenómeno de El Niño en la región.</p>
-                    <p class="txt-base-carrusel">Si bien esta agua era necesaria para sopesar la baja de niveles de los embalses como consecuencia del fenómeno de El Niño, las autoridades y ciudadanos reportan algunos accidentes viales y caos en la movilidad</p>
-
+                    <div>
+                        <h3 class="txt-base-carrusel">¡Alivio para embalses y trancones en las vías!</h3>
+                        <p class="txt-base-carrusel">“Fuertes lluvias en Medellín y el Valle de Aburrá aliviaron la sequía de los embalses, pero provocaron caos en la movilidad por caídas de árboles y accidentes viales. El Siata advirtió que los aguaceros coexistirán con el fenómeno de El Niño en la región.</p>
+                        <p class="txt-base-carrusel">Si bien esta agua era necesaria para sopesar la baja de niveles de los embalses como consecuencia del fenómeno de El Niño, las autoridades y ciudadanos reportan algunos accidentes viales y caos en la movilidad.</p>
+                        <div class="acciones-noticia">
+                            <a href="#" class="btn-ver-mas">Ver más</a>
+                            <button type="button" class="btn-favorito" onclick="toggleFavorito('lluvias-medellin')">★ Favoritos</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-     </div>
-     div class="bg-gray secccion-noticias"></div>
-     <div class="noticias-recientes">
-        <div>
-            <img class="img-noticias" src="imagenes/carro_electrico.jpg" alt="cripto estafas">as">
+
+        <div class="bg-gray seccion-noticias"></div>
+        <div class="noticias-recientes">
             <div>
+                <img class="img-noticias" src="imagenes/carro_electrico.jpg" alt="Carros eléctricos en Colombia">
                 <div>
-                    <h3 class="txt-base-carruse">¿Uno de cada dos carros nuevos ya es eléctrico o híbrido: Tesla y BYD concentran más del 60% en 2026</h3>
-                    <p class="txt-base-carrusel">Tesla se quedó con 41,6% del mercado colombiano de vehículos eléctricos entre enero y agosto, mientras BYD alcanzó 21,6%. El avance de estas marcas ocurre en un mercado en el que las tecnologías electrificadas representaron en agosto el 50,6 % de las matrículas de carros nuevos.</p>
-                    <p class="txt-base-carrusel">El carro eléctrico dejó de ser una rareza en las calles colombianas y comenzó a disputarles espacio a los motores de combustión. En agosto, por primera vez, los vehículos híbridos y eléctricos representaron 50,6% de todos los vehículos nuevos matriculados en Colombia. Es decir, uno de cada dos carros que llegaron al registro en el mes utilizaba alguna de estas tecnologías.</p>
+                    <div>
+                        <h3 class="txt-base-carrusel">¿Uno de cada dos carros nuevos ya es eléctrico o híbrido: Tesla y BYD concentran más del 60% en 2026?</h3>
+                        <p class="txt-base-carrusel">Tesla se quedó con 41,6% del mercado colombiano de vehículos eléctricos entre enero y agosto, mientras BYD alcanzó 21,6%. El avance de estas marcas ocurre en un mercado en el que las tecnologías electrificadas representaron en agosto el 50,6 % de las matrículas de carros nuevos.</p>
+                        <p class="txt-base-carrusel">El carro eléctrico dejó de ser una rareza en las calles colombianas y comenzó a disputarles espacio a los motores de combustión. En agosto, por primera vez, los vehículos híbridos y eléctricos representaron 50,6% de todos los vehículos nuevos matriculados en Colombia. Es decir, uno de cada dos carros que llegaron al registro en el mes utilizaba alguna de estas tecnologías.</p>
+                        <div class="acciones-noticia">
+                            <a href="tecnologia.html" class="btn-ver-mas">Ver más</a>
+                            <button type="button" class="btn-favorito" onclick="toggleFavorito('carros-electricos')">★ Favoritos</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-     </div>
-     div class="bg-gray secccion-noticias"></div>
-     <div class="noticias-recientes">
-        <div>
-            <img class="img-noticias" src="imagenes/poli.png" alt="cripto estafas">as">
+
+        <div class="bg-gray seccion-noticias"></div>
+        <div class="noticias-recientes">
             <div>
+                <img class="img-noticias" src="imagenes/poli.png" alt="Participación Poli en Fiesta del Libro">
                 <div>
-                    <h3 class="txt-base-carruse">Así se vivió la participación del Poli en la Fiesta del Libro y la Cultura de Medellín</h3>
-                    <p class="txt-base-carrusel">Del 11 al 20 de septiembre, el Poli hizo parte de la Fiesta del Libro y la Cultura de Medellín, un encuentro que reunió a la ciudadanía alrededor de la literatura, el conocimiento, el arte y la cultura, y que permitió compartir diferentes iniciativas desarrolladas desde la Institución junto a aliados del territorio.</p>
-                    <p class="txt-base-carrusel">Durante esta edición, el Poli contó con un espacio en el que los visitantes pudieron conocer su catálogo editorial, la oferta académica y diferentes proyectos que conectaron la educación con la cultura, la creación y las historias de las comunidades.</p>
-                    <p class="txt-base-carrusel">Uno de los momentos destacados fue la presentación de “De grande quiero ser bombero”, una publicación infantil desarrollada junto al Cuerpo de Bomberos Voluntarios de Envigado. El libro, creado por Graduadas Poli con el acompañamiento docente y la asesoría técnica del organismo de socorro, acercó a niñas y niños a la labor bomberil mediante ilustraciones, actividades, retos y contenidos interactivos. La propuesta permitió conocer el trabajo, la preparación y el compromiso de quienes atienden emergencias y trabajan por la protección de las comunidades.</p>
+                    <div>
+                        <h3 class="txt-base-carrusel">Así se vivió la participación del Poli en la Fiesta del Libro y la Cultura de Medellín</h3>
+                        <p class="txt-base-carrusel">Del 11 al 20 de septiembre, el Poli hizo parte de la Fiesta del Libro y la Cultura de Medellín, un encuentro que reunió a la ciudadanía alrededor de la literatura, el conocimiento, el arte y la cultura, y que permitió compartir diferentes iniciativas desarrolladas desde la Institución junto a aliados del territorio.</p>
+                        <p class="txt-base-carrusel">Durante esta edición, el Poli contó con un espacio en el que los visitantes pudieron conocer su catálogo editorial, la oferta académica y diferentes proyectos que conectaron la educación con la cultura, la creación y las historias de las comunidades.</p>
+                        <p class="txt-base-carrusel">Uno de los momentos destacados fue la presentación de “De grande quiero ser bombero”, una publicación infantil desarrollada junto al Cuerpo de Bomberos Voluntarios de Envigado. El libro, creado por Graduadas Poli con el acompañamiento docente y la asesoría técnica del organismo de socorro, acercó a niñas y niños a la labor bomberil mediante ilustraciones, actividades, retos y contenidos interactivos. La propuesta permitió conocer el trabajo, la preparación y el compromiso de quienes atienden emergencias y trabajan por la protección de las comunidades.</p>
+                        <div class="acciones-noticia">
+                            <a href="#" class="btn-ver-mas">Ver más</a>
+                            <button type="button" class="btn-favorito" onclick="toggleFavorito('fiesta-libro-poli')">★ Favoritos</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-     </div>
 
-</main>
+    </main>
 
-<!-- ==== Footer ======== --> 
-<div id="FooterPuntoDigital"  class="footer-basic">
-    <footer>
-        <div class="social">
-            <a href=""><i class="icon icon-color ion-social-github"></i></a>
-            <a href=""><i class="icon icon-color ion-social-whatsapp"></i></a>
-            <a href=""><i class="icon icon-color ion-social-facebook"></i></a>
-            <a href=""><i class="icon icon-color ion-social-instagram"></i></a>
-
-        </div>
-        <p class="copyright">Pulso Digital ©2026</p>
-    </footer>
-
-</div>
+    <!-- ==== Footer ======== --> 
+    <div id="FooterPuntoDigital" class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="icon icon-color ion-social-github"></i></a>
+                <a href="#"><i class="icon icon-color ion-social-whatsapp"></i></a>
+                <a href="#"><i class="icon icon-color ion-social-facebook"></i></a>
+                <a href="#"><i class="icon icon-color ion-social-instagram"></i></a>
+            </div>
+            <p class="copyright">Pulso Digital ©2026</p>
+        </footer>
+    </div>
 
 </body>
 </html>
