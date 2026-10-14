@@ -13,6 +13,7 @@ body {
     margin: 0;
     background-color: #121212; /* Fondo oscuro de la página */
     font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
 }
 
 /* Header fijo con fondo oscuro */
@@ -26,7 +27,7 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Contenedor central (ahora coincide con class="wrapper") */
+/* Contenedor central */
 .wrapper {
     width: 100%;
     max-width: 1400px;
@@ -55,18 +56,18 @@ body {
 ul.d-flex {
     list-style: none;
     display: flex;
-    gap: 45px; /* Separación entre Tecnologia, Politica y Deportes */
+    gap: 35px; /* Separación armónica entre enlaces */
     margin: 0;
     padding: 0;
 }
 
-/* Enlaces más grandes */
+/* Enlaces del menú */
 .link-header a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 2.6rem; /* Ajusta aquí el tamaño: 2.4rem, 2.6rem, 2.8rem, etc. */
+    font-size: 2.2rem;
     font-weight: bold;
-    text-transform: uppercase; /* Opcional: si las quieres en mayúsculas */
+    text-transform: uppercase;
     transition: color 0.3s ease;
 }
 
@@ -75,44 +76,16 @@ ul.d-flex {
 }
 
 .link-header a:visited {
-    color: rgb(198,140,93);
+    color: rgb(198, 140, 93);
 }
 
-/* footer*/
-
-.footer-basic{
-    padding: 40px 0px;
-    background-color: white;
-    color: black;
-}
-
-.footer-basic .social {
-    text-align: center;
-
-}
-
-
-.footer-basic .social >a {
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    border: 1px solid #ffffff;
-    margin: 0 8px;
-    color: inherit;
-    opacity: 0.75;
-
-}
-
-.footer-basic .copyright {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    margin-bottom: 0px;
-
+.fecha-header {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #c5a059;
+    margin-left: 20px;
+    white-space: nowrap;
 }
 
 /* Portada*/
@@ -171,23 +144,24 @@ h2.no-margin {
 
 
 .img-noticias{
- width: 500px;            /* Ancho fijo para que todas sean del tamaño de la pequeña */
-    height: auto;           /* Altura fija idéntica para todas */
-    object-fit: cover;       /* Clave: encuadra y recorta la foto para que no se deforme */
-    display: block;          /* Necesario para centrar */
-    margin: 20px auto;       /* Centra la imagen en medio de la tarjeta negra */
-    border-radius: 8px;      /* Opcional: esquinas ligeramente redondeadas */
+  width: 100%;
+    max-width: 600px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
 }
 
 .noticias-recientes{
    height: auto;
-    background-color: black;
-    width: 85%;             /* Ocupa el 90% a lo largo de la pantalla */
-    max-width: 2200px;      /* Límite para que no se deforme en pantallas gigantes */
-    margin: 30px auto;      /* "auto" a los lados es la CLAVE que lo centra en la pantalla */
+    background-color: #1a1a1a;
+    width: 85%;
+    max-width: 1100px;
+    margin: 30px auto;
     border-radius: 16px;
-    padding-bottom: 20px;
-
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 .txt-base-carrusel{
@@ -200,11 +174,13 @@ h2.no-margin {
 
 
 .txt-base-carruse{
-    font-size: 40px;
-    color: white;
+     font-size: 2.8rem;
+    color: #ffffff;
     background-color: #e5a93b;
-    height: auto;
+    padding: 12px;
+    border-radius: 6px;
     text-align: center;
+    margin: 10px 0;
 }
  
 
